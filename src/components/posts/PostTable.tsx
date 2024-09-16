@@ -10,7 +10,6 @@ import {
 import Link from "next/link";
 import posts from "@/data/posts";
 import { Post } from "@/types/post";
-import { Button } from "@/components/ui/button";
 
 interface PostTableProps {
   limit?: number;
@@ -49,7 +48,7 @@ const filteredPosts = limit ? sortedPosts.slice(0,limit):sortedPosts;
               <TableCell>{post.title}</TableCell>
               <TableCell className="hidden md:table-cell ">
                 {post.author}
-              </TableCell>{" "}
+              </TableCell>
               <TableCell className="hidden md:table-cell text-right ">
                 {post.date}
               </TableCell>

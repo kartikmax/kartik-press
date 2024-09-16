@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Command,
-  CommandDialog,
   CommandEmpty,
   CommandGroup,
   CommandInput,
@@ -22,7 +21,7 @@ import Link from "next/link";
 
 const Sidebar = () => {
   return (
-    <nav>
+    <>
       <Command className="bg-secondary rounded-none">
         <CommandInput placeholder="Type a command or search..." />
         <CommandList>
@@ -67,7 +66,7 @@ const Sidebar = () => {
           </CommandGroup>
         </CommandList>
       </Command>
-    </nav>
+    </>
   );
 };
 
